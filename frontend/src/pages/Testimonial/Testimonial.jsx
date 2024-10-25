@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 
-const About = () => {
+const Testimonial = () => {
     return (
         <>
-        <div>
-            <Navbar/>
-        </div>
+            <div>
+                <Navbar />
+            </div>
         </>
     )
 }
 
-export default About
+export default Testimonial

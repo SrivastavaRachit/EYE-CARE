@@ -1,7 +1,8 @@
 import React from 'react'
+
 import Navbar from '../../components/Navbar/Navbar'
 
-const About = () => {
+const Blogs = () => {
     return (
         <>
         <div>
@@ -11,4 +12,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Blogs
