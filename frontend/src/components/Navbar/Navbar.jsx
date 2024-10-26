@@ -12,8 +12,14 @@ const Navbar = () => {
             {/* Top Contact Bar */}
             <div className="flex flex-col sm:flex-row justify-between items-center px-4 py-2 text-sm bg-gray-800 md:px-8 lg:px-16">
                 <div className="flex space-x-4 sm:space-x-6 justify-center">
-                    <p className="hover:text-yellow-500 transition duration-300">eyecare@gmail.com</p>
-                    <p className="hover:text-yellow-500 transition duration-300">+91 1234568790</p>
+                    {/* Email redirection */}
+                    <a href="mailto:eyecare@gmail.com" className="hover:text-yellow-500 transition duration-300">
+                        eyecare@gmail.com
+                    </a>
+                    {/* Phone call or WhatsApp redirection */}
+                    <a href="https://wa.me/911234567890" className="hover:text-yellow-500 transition duration-300" target="_blank" rel="noopener noreferrer">
+                        +91 1234568790
+                    </a>
                 </div>
             </div>
 
@@ -21,10 +27,16 @@ const Navbar = () => {
             <div className="container mx-auto px-4 md:px-8 lg:px-16 flex items-center justify-between py-4">
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
-                    <img src="" alt="Logo" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-yellow-500 shadow-md" />
-                    <span className="text-2xl sm:text-3xl font-bold text-yellow-500 tracking-wide">
-                        EyeCare
-                    </span>
+                    <NavLink to="/" className="flex items-center space-x-2">
+                        <img
+                            src="https://img.freepik.com/free-photo/flat-lay-eye-care-accessories-pink-background-with-notebook-mock-up_23-2148320363.jpg?t=st=1729855745~exp=1729859345~hmac=0e33ec2bf1ae14ee5acf97155825ca6ddcafef12a39206896c4e9d010f8393ad&w=740"
+                            alt="Logo"
+                            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-yellow-500 shadow-md"
+                        />
+                        <span className="text-2xl sm:text-3xl font-bold text-yellow-500 tracking-wide">
+                            EyeCare
+                        </span>
+                    </NavLink>
                 </div>
 
                 {/* Desktop Menu */}
