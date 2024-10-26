@@ -1,18 +1,38 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-8 px-6 md:px-16">
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <footer className="relative bg-gray-900 text-white mt-8 py-8 px-6 md:px-16">
+            {/* Newsletter Card */}
+            <div className="absolute inset-x-0 -top-10 mx-auto w-11/12 sm:w-3/5 md:w-2/5 bg-white
+                    text-gray-900 p-6 rounded-t-lg rounded-b-3xl shadow-xl flex items-center justify-between">
+                <div className="flex items-center space-x-3">
+                    <FiMail className="text-teal-500 text-3xl" />
+                    <h4 className="text-lg font-bold">Subscribe To Our Newsletter</h4>
+                </div>
+                <div className="flex space-x-2">
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        className="text-sm px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-teal-500"
+                    />
+                    <button className="bg-teal-500 text-white px-6 py-2 rounded-full font-bold hover:bg-teal-600 transition-all duration-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
 
+
+            {/* Footer Content */}
+            <div className="container mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Logo and Description */}
                 <div className="flex flex-col items-start">
                     <h2 className="text-xl md:text-2xl font-semibold">Medinosi</h2>
                     <p className="text-sm md:text-base mt-2 max-w-xs">
-                        Medinosi is your trusted partner in health. We provide world-class 
-                        services for all your medical needs.
+                        Medinosi is your trusted partner in health. We provide world-class services for all your medical needs.
                     </p>
                     <div className="flex space-x-4 mt-4">
                         <div className="bg-green-500 p-2 rounded-full">
@@ -48,8 +68,8 @@ const Footer = () => {
                         <li><NavLink to="/blog" className="hover:text-yellow-500 transition duration-300">Blog</NavLink></li>
                         <li><NavLink to="/about" className="hover:text-yellow-500 transition duration-300">About Us</NavLink></li>
                         <li><NavLink to="/testimonial" className="hover:text-yellow-500 transition duration-300">Testimonial</NavLink></li>
-                        <button className=" px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold 
-                    rounded-bl-full shadow-md transform transition duration-300 hover:scale-105">
+                        <button className="px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold 
+                            rounded-bl-full shadow-md transform transition duration-300 hover:scale-105">
                             <NavLink to='/contact'>
                                 Contact Us
                             </NavLink>
