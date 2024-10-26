@@ -118,18 +118,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">Medinoi</div>
-          <ul className="flex space-x-6">
-            <li>Services</li>
-            <li>Open Time</li>
-            <li>Newsletter</li>
-          </ul>
-        </div>
-      </footer>
     </div>
   );
 };

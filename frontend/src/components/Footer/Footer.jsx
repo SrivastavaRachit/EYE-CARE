@@ -11,7 +11,8 @@ const Footer = () => {
                 <div className="flex flex-col items-start">
                     <h2 className="text-xl md:text-2xl font-semibold">Medinosi</h2>
                     <p className="text-sm md:text-base mt-2 max-w-xs">
-                        Medinosi is your trusted partner in health. We provide world-class services for all your medical needs.
+                        Medinosi is your trusted partner in health. We provide world-class 
+                        services for all your medical needs.
                     </p>
                     <div className="flex space-x-4 mt-4">
                         <div className="bg-green-500 p-2 rounded-full">
