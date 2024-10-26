@@ -3,8 +3,6 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div className="font-sans">
-
-
       {/* Experience Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
