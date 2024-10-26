@@ -1,5 +1,8 @@
 import React from 'react';
 import { AiOutlineUser, AiOutlineMedicineBox, AiOutlineHeart, AiOutlineSolution, AiOutlineCheckCircle, AiOutlineArrowRight } from 'react-icons/ai';
+import image1 from '../../assets/firstimage.png'
+import image2 from '../../assets/secondimage.png'
+
 
 const OurAbout = () => {
   return (
@@ -14,12 +17,12 @@ const OurAbout = () => {
           </div>
 
           <img
-            src="https://img.freepik.com/free-photo/closeup-shot-green-eye-woman_181624-18717.jpg?uid=R167672705&ga=GA1.1.1165456550.1728109905&semt=ais_hybrid"
+            src={image1}
             alt="Doctor Image 1"
             className="w-full h-[500px] object-cover rounded-lg"
           />
           <img
-            src="https://img.freepik.com/free-photo/close-up-eye-scanning_23-2148878102.jpg?t=st=1729934937~exp=1729938537~hmac=671cc297f019974a9478b0f983c72dfa1dcd3285e0befd81667c9fc5d77f1f9a&w=740"
+            src={image2}
             alt="Doctor Image 2"
             className="w-full h-[500px] object-cover rounded-lg"
           />
