@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import HomePage from '../../components/HomePage/HomePage'
-import EyeSystem from '../../components/EyeSystem/EyeSystem'
 import BannerHome from '../../components/BannerHome/BannerHome'
 import Footer from '../../components/Footer/Footer'
+import OurAbout from '../../components/OurAbout/OurAbout'
 
 const Home = () => {
     return (
         <>
         <Navbar/>
         <BannerHome/>
-        <EyeSystem/>
+        <OurAbout/>
         <HomePage/>
 
         <Footer/>
