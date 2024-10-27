@@ -74,7 +74,7 @@ const OurBestService = () => {
               <div className="text-5xl text-teal-600">{service.icon}</div>
               <h4 className="text-2xl font-bold text-gray-800">{service.title}</h4>
             </div>
-            <p className="text-gray-600 text-lg mb-4">{service.description}</p>
+            <p className="text-black text-xl mb-4">{service.description}</p>
             <img src={service.imageUrl} alt={service.title} className="w-full rounded-lg mt-2" />
             <button
               className="mt-6 py-3 px-6 flex items-center justify-center gap-2 text-white bg-gradient-to-r from-teal-500 to-teal-700 rounded-full shadow-lg hover:bg-gradient-to-l transition-all duration-300"
