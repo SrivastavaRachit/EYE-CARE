@@ -1,44 +1,45 @@
 import React from "react";
 import { FaQuoteRight } from "react-icons/fa";
-import testimonial1 from '../../assets/testimonial1.png'
-import testimonial2 from '../../assets/testimonial2.png'
-import testimonial3 from '../../assets/testimonial3.png'
-import testimonial4 from '../../assets/testimonial4.png'
+import HomeTesti1 from '../../assets/HomeTesti1.png'
+import HomeTesti2 from '../../assets/HomeTesti2.png'
+import HomeTesti3 from '../../assets/HomeTesti3.png'
+import HomeTesti4 from '../../assets/HomeTesti4.png'
+
 
 
 const testimonials = [
     {
         id: 1,
-        name: "Karon Merata",
+        name: "Karan Malhotra",
         position: "Founder",
-        image: testimonial1,
+        image: HomeTesti1,
         rating: 4,
         message:
             "We are privileged to work with hundreds of future-thin businesses, including many of the world’s top ha, software, and brands.",
     },
     {
         id: 2,
-        name: "Poron Ratena",
+        name: "Raj Kishore",
         position: "Manager",
-        image: testimonial2,
+        image: HomeTesti2,
         rating: 5,
         message:
             "We are privileged to work with hundreds of future-thin businesses, including many of the world’s top ha, software, and brands.",
     },
     {
         id: 3,
-        name: "Ratena OOPP",
+        name: "Kunal Sonker",
         position: "Co-Founder",
-        image: testimonial3,
+        image: HomeTesti3,
         rating: 5,
         message:
             "We are privileged to work with hundreds of future-thin businesses, including many of the world’s top ha, software, and brands.",
     },
     {
         id: 4,
-        name: "PoOPO",
-        position: "Manager",
-        image:testimonial4,
+        name: "Om Prajapati",
+        position: "Advisor",
+        image: HomeTesti4,
         rating: 5,
         message:
             "We are privileged to work with hundreds of future-thin businesses, including many of the world’s top ha, software, and brands.",
@@ -51,19 +52,19 @@ const TestimonialCard = ({ name, position, image, rating, message }) => (
         <div className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-teal-300 -mt-12">
             <img src={image} alt={name} className="w-full h-full object-cover" />
         </div>
-        <h3 className="mt-4 font-semibold text-xl text-gray-700">{name}</h3>
-        <p className="text-sm text-gray-500">{position}</p>
+        <h3 className="mt-4 font-semibold text-2xl text-gray-700">{name}</h3>
+        <p className="text-xl text-gray-800">{position}</p>
         <div className="flex my-3">
             {[...Array(5)].map((_, i) => (
                 <span
                     key={i}
-                    className={`text-lg ${i < rating ? "text-teal-500" : "text-gray-300"}`}
+                    className={`text-xl ${i < rating ? "text-teal-500" : "text-gray-300"}`}
                 >
                     ★
                 </span>
             ))}
         </div>
-        <p className="text-center text-gray-600 mt-2 px-6">{message}</p>
+        <p className="text-center text-xl text-gray-800 mt-2 px-6">{message}</p>
         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-teal-100 text-teal-400 rounded-full w-12 h-12 flex items-center justify-center z-10 shadow-md">
             <FaQuoteRight className="text-2xl" />
         </div>
@@ -72,12 +73,12 @@ const TestimonialCard = ({ name, position, image, rating, message }) => (
 
 
 
-const Test = () => (
+const TestiHome = () => (
     <section className="py-16 bg-gray-100">
         <div className="text-center mb-12">
             <div className="flex justify-center items-center space-x-2 mb-2">
                 <span className="bg-teal-500 w-3 h-3 rounded-full"></span>
-                <h2 className="text-gray-700 text-xl font-semibold tracking-widest uppercase">
+                <h2 className="text-black text-2xl font-bold tracking-widest uppercase">
                     Our Testimonials
                 </h2>
                 <span className="bg-teal-500 w-3 h-3 rounded-full"></span>
@@ -100,4 +101,4 @@ const Test = () => (
 );
 
 
-export default Test;
+export default TestiHome;

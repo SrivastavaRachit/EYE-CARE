@@ -6,6 +6,8 @@ import OurAbout from '../../components/OurAbout/OurAbout'
 import OurBestService from '../../components/OurBestService/OurBestService'
 import OurLaboratory from '../../components/OurLaboratory/OurLaboratory'
 import OurTeam from '../../components/OurTeam/OurTeam'
+import TestiHome from '../../components/TestiHome/TestiHome'
+import BlogNews from '../../components/BlogNews/BlogNews'
 
 const Home = () => {
     return (
@@ -16,6 +18,8 @@ const Home = () => {
         <OurBestService/>
         <OurLaboratory/>
         <OurTeam/>
+        <TestiHome/>
+        <BlogNews/>
 
         <Footer/>
         </>
