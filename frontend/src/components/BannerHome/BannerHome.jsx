@@ -13,13 +13,13 @@ const BannerHome = () => {
           backgroundPosition: 'center top',
         }}
       >
-        <div className="container mx-auto px-4 text-white">
-          <h1 className="text-7xl font-bold mb-4">Best of Practice Place</h1>
-          <h1 className="text-7xl font-bold mb-4">
-            Medical <span className="text-7xl text-teal-400">Doctor</span>
+        <div className="container mx-auto px-4 text-black">
+          <h1 className="text-7xl font-bold italic mb-4">Best of Practice Place</h1>
+          <h1 className="text-7xl italic font-bold mb-4">
+            Medical <span className="text-7xl italic text-teal-300">Doctor</span>
           </h1>
           
-          <p className="text-2xl mb-9">
+          <p className="text-2xl  font-semibold mb-9">
             Today, Barry’s is on the cusp of continued global expansion with over <br />
             100,000 members working out weekly in studios.
           </p>
