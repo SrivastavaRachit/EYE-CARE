@@ -13,7 +13,7 @@ const ContactusPage = () => {
       >
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
-        
+
         <div className="relative z-10 text-center px-4 max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 text-black font-[Poppins]">
             Contact Doctors
@@ -22,12 +22,12 @@ const ContactusPage = () => {
             Reach out to our dedicated healthcare team for personalized solutions. We're committed to guiding your health journey with expert advice and compassionate care.
           </p>
           <a
-          href="#contact"
-           className="bg-gradient-to-r from-teal-600 to-teal-400 text-black font-semibold text-xl tracking-wider py-3 px-10 rounded-full border-2 border-white shadow-md transition-all transform hover:scale-105 hover:from-teal-400 hover:to-teal-600 hover:shadow-lg"
-          style={{ letterSpacing: '0.05em' }}
-           >
-  Book Your Appointment
-</a>
+            href="#contact"
+            className="bg-gradient-to-r from-teal-600 to-teal-400 text-black font-semibold text-xl tracking-wider py-3 px-10 rounded-full border-2 border-white shadow-md transition-all transform hover:scale-105 hover:from-teal-400 hover:to-teal-600 hover:shadow-lg"
+            style={{ letterSpacing: '0.05em' }}
+          >
+            Book Your Appointment
+          </a>
 
 
         </div>
@@ -36,7 +36,7 @@ const ContactusPage = () => {
       {/* Main Contact Section */}
       <div id="contact" className="bg-white text-gray-800 py-14 px-6 md:px-24">
         <div className="flex flex-col md:flex-row items-center justify-around space-y-10 md:space-y-0">
-          
+
           {/* Email Section */}
           <div className="flex flex-col items-center text-center p-6 max-w-xs border border-teal-500 rounded-lg shadow-lg">
             <div className="bg-teal-500 p-4 rounded-full mb-4 shadow-md">
@@ -60,7 +60,7 @@ const ContactusPage = () => {
             </div>
             <h3 className="font-bold text-2xl mb-2 text-teal-700">Appointment Call</h3>
             <p className="text-xl text-black font-semibold mb-4">24/7 – quick and easy</p>
-            <a href="tel:+1234567890" className="text-teal-600 text-xl font-semibold hover:underline">
+            <a href='tel:+918840775386' className="text-teal-600 text-xl font-semibold hover:underline">
               Appointment Now
             </a>
           </div>
@@ -86,112 +86,112 @@ const ContactusPage = () => {
         </div>
       </div>
       <div className="bg-teal-900 text-white font-sans py-16">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 space-y-10 lg:space-y-0 lg:space-x-16">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 space-y-10 lg:space-y-0 lg:space-x-16">
 
-        {/* Left Section */}
-        <div className="flex flex-col space-y-7 max-w-lg">
-          <div className="flex items-center leading-tight space-x-3">
-            <FaRegEnvelope className="text-teal-400 w-8 h-8" />
-            <p className="text-teal-400 text-2xl  font-semibold">Our Contact Now</p>
-            <FaRegCommentDots className="text-teal-400 w-8 h-8" />
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Get In Questions <span className="text-teal-400 underline decoration-teal-500">Touch</span>.
-          </h2>
-          <p className="text-gray-300 text-xl leading-relaxed">
-            It is issued free of charge in medical offices or at home with time purchase of services in the amount of more than ₹40 per person. Icesa in an elevated ambience.
-          </p>
-          <ul className="text-gray-300 space-y-2">
-            <li className="flex items-start space-x-2">
-              <span className="text-teal-400 text-xl">✔</span>
-              <span className="text-xl">Business sagittis leo for best medical call.</span>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-teal-400 text-xl">✔</span>
-              <span className="text-xl">We give management hospital calling.</span>
-            </li>
-          </ul>
-          <div className="flex items-center space-x-4 mt-6">
-            <div className="bg-teal-500 p-3 rounded-full">
-              <FaPhoneAlt className="w-8 h-8 text-white" />
+          {/* Left Section */}
+          <div className="flex flex-col space-y-7 max-w-lg">
+            <div className="flex items-center leading-tight space-x-3">
+              <FaRegEnvelope className="text-teal-400 w-8 h-8" />
+              <p className="text-teal-400 text-2xl  font-semibold">Our Contact Now</p>
+              <FaRegCommentDots className="text-teal-400 w-8 h-8" />
             </div>
-            <div>
-              <h4 className="text-3xl font-semibold">Appointment Call</h4>
-              <p className="text-gray-300 text-2xl">24/7 – quick and easy</p>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+              Get In Questions <span className="text-teal-400 underline decoration-teal-500">Touch</span>.
+            </h2>
+            <p className="text-gray-300 text-xl leading-relaxed">
+              It is issued free of charge in medical offices or at home with time purchase of services in the amount of more than ₹40 per person. Icesa in an elevated ambience.
+            </p>
+            <ul className="text-gray-300 space-y-2">
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-400 text-xl">✔</span>
+                <span className="text-xl">Business sagittis leo for best medical call.</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-400 text-xl">✔</span>
+                <span className="text-xl">We give management hospital calling.</span>
+              </li>
+            </ul>
+            <div className="flex items-center space-x-4 mt-6">
+              <div className="bg-teal-500 p-3 rounded-full">
+                <FaPhoneAlt className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h4 className="text-3xl font-semibold">Appointment Call</h4>
+                <p className="text-gray-300 text-2xl">24/7 – quick and easy</p>
+              </div>
             </div>
+            <a
+              href="#contact"
+              className="relative inline-block w-full max-w-xs md:max-w-sm px-6 py-2 md:px-8 md:py-3 text-center md:text-lg font-semibold text-white bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 rounded-full shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100 rounded-full"></span>
+              <span className="relative text-xl text-black font-bold z-10">Contact Us</span>
+            </a>
+
+
+
           </div>
-          <a
-  href="#contact"
-  className="relative inline-block w-full max-w-xs md:max-w-sm px-6 py-2 md:px-8 md:py-3 text-center md:text-lg font-semibold text-white bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 rounded-full shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95"
->
-  <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100 rounded-full"></span>
-  <span className="relative text-xl text-black font-bold z-10">Contact Us</span>
-</a>
 
+          {/* Right Section - Form */}
+          <div className="bg-teal-700 p-10 rounded-lg shadow-lg w-full lg:w-[28rem]">
+            <h3 className="text-3xl italic font-bold mb-4 text-black">Appointments</h3>
+            <p className="text-white font-bold text-2xl mb-6">Available 24/7 Support health</p>
+            <form className="space-y-4">
+              <select
+                className="w-full p-3 rounded-md bg-teal-800 text-xl text-white placeholder-gray-400"
+                defaultValue=""
+              >
+                <option value="" disabled>New Patient*</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Your Name*"
+                className="w-full p-3 rounded-md bg-teal-800 text-white text-xl placeholder-gray-400"
+              />
+              <input
+                type="date"
+                placeholder="Patient Date*"
+                className="w-full p-3 text-xl rounded-md bg-teal-800 text-white placeholder-gray-400"
+              />
+              <input
+                type="text"
+                placeholder="Email or Phone*"
+                className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
+              />
+              <select
+                className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
+                defaultValue=""
+              >
+                <option value="" disabled>Sex*</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <button
+                type="submit"
+                className="relative overflow-hidden w-full text-xl bg-gradient-to-r from-teal-400 via-teal-500 to-teal-700 text-white font-semibold py-3 rounded-full shadow-lg transform scale-100 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl active:scale-95 active:shadow-md group"
+              >
+                {/* <!-- Default Gradient --> */}
+                <span className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 opacity-80 animate-gradient-x transition-all duration-500 group-hover:opacity-0"></span>
 
+                {/* <!-- Hover Gradient --> */}
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 opacity-0 group-hover:opacity-80 transition-all duration-500"></span>
 
-        </div>
-
-        {/* Right Section - Form */}
-        <div className="bg-teal-700 p-10 rounded-lg shadow-lg w-full lg:w-[28rem]">
-          <h3 className="text-3xl italic font-bold mb-4 text-black">Appointments</h3>
-          <p className="text-white font-bold text-2xl mb-6">Available 24/7 Support health</p>
-          <form className="space-y-4">
-            <select
-              className="w-full p-3 rounded-md bg-teal-800 text-xl text-white placeholder-gray-400"
-              defaultValue=""
-            >
-              <option value="" disabled>New Patient*</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-            <input
-              type="text"
-              placeholder="Your Name*"
-              className="w-full p-3 rounded-md bg-teal-800 text-white text-xl placeholder-gray-400"
-            />
-            <input
-              type="date"
-              placeholder="Patient Date*"
-              className="w-full p-3 text-xl rounded-md bg-teal-800 text-white placeholder-gray-400"
-            />
-            <input
-              type="text"
-              placeholder="Email or Phone*"
-              className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
-            />
-            <select
-              className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
-              defaultValue=""
-            >
-              <option value="" disabled>Sex*</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-            <button
-  type="submit"
-  className="relative overflow-hidden w-full text-xl bg-gradient-to-r from-teal-400 via-teal-500 to-teal-700 text-white font-semibold py-3 rounded-full shadow-lg transform scale-100 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl active:scale-95 active:shadow-md group"
->
-  {/* <!-- Default Gradient --> */}
-  <span className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 opacity-80 animate-gradient-x transition-all duration-500 group-hover:opacity-0"></span>
-
-  {/* <!-- Hover Gradient --> */}
-  <span className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 opacity-0 group-hover:opacity-80 transition-all duration-500"></span>
-
-  <span className="relative z-10 flex text-black font-bold items-center justify-center gap-2">
-    <svg className="w-5 h-5 text-white animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M13 2L3 14h9v8l10-12h-9V2z" />
-    </svg>
-    Send Request
-  </span>
-</button>
-          </form>
+                <span className="relative z-10 flex text-black font-bold items-center justify-center gap-2">
+                  <svg className="w-5 h-5 text-white animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 2L3 14h9v8l10-12h-9V2z" />
+                  </svg>
+                  Send Request
+                </span>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    
+
   );
 };
 

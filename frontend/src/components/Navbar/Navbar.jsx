@@ -13,12 +13,13 @@ const Navbar = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center px-4 py-2 text-sm bg-gray-800 md:px-8 lg:px-16">
                 <div className="flex space-x-4 sm:space-x-6 justify-center">
                     {/* Email redirection */}
-                    <a href="mailto:eyecare@gmail.com" className="hover:text-yellow-500 transition duration-300">
-                        eyecare@gmail.com
+                    <a href="mailto:hexagonsservices@gmail.com" className="hover:text-yellow-500 transition duration-300">
+                        hexagonsservices@gmail.com
                     </a>
                     {/* Phone call or WhatsApp redirection */}
-                    <a href="https://wa.me/911234567890" className="hover:text-yellow-500 transition duration-300" target="_blank" rel="noopener noreferrer">
-                        +91 1234568790
+                    <a href="https://wa.me/918840775386" className="hover:text-yellow-500 transition duration-300"
+                            target="_blank" rel="noopener noreferrer">
+                        +91 8840775386
                     </a>
                 </div>
             </div>

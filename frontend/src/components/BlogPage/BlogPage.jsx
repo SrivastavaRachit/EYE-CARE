@@ -70,9 +70,9 @@ const BlogPage = () => {
                 {index === 3 && "Whether you're just beginning or pushing boundaries, we have tips, inspiration, and expert advice to help you fuel your fitness journey and achieve results that last."}
               </p>
               <div className="flex justify-between items-center mt-4">
-                <a href="#" className="text-teal-600 text-2xl hover:text-teal-800 font-extrabold">
+                {/* <a href="#" className="text-teal-600 text-2xl hover:text-teal-800 font-extrabold">
                   Read More
-                </a>
+                </a> */}
                 <button
                   className="text-red-500 hover:text-red-700 transition-colors duration-300"
                   aria-label="Add to Favorites"

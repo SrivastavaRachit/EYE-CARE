@@ -6,6 +6,7 @@ import blog3 from '../../assets/blog3.png';
 import blog4 from '../../assets/blog4.png';
 import blog5 from '../../assets/blog5.png';
 import blog6 from '../../assets/blog6.png';
+import { NavLink } from 'react-router-dom';
 
 const BlogNews = () => {
   const blogPosts = [
@@ -106,7 +107,9 @@ const BlogNews = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-gray-800">{post.title}</h3>
                   <p className="text-gray-800 font-semibold text-lg mb-4">{post.description}</p>
-                  <button className="text-blue-600 font-semibold  text-xl hover:underline">Read More</button>
+                  <NavLink to='/blog'>
+                    <button className="text-blue-600 font-semibold  text-xl hover:underline">Read More</button>
+                  </NavLink>
                 </div>
               </div>
             ))}
@@ -116,9 +119,8 @@ const BlogNews = () => {
             {Array.from({ length: totalSlides }).map((_, index) => (
               <div
                 key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-500 cursor-pointer ${
-                  index === currentIndex ? 'bg-teal-500' : 'bg-gray-300'
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-500 cursor-pointer ${index === currentIndex ? 'bg-teal-500' : 'bg-gray-300'
+                  }`}
                 onClick={() => setCurrentIndex(index)}
               />
             ))}

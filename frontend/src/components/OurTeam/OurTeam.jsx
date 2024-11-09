@@ -27,7 +27,6 @@ const OurTeam = () => {
   };
 
   const handleCloseModal = (e) => {
-    // Close modal if the user clicks on the overlay
     if (e.target === e.currentTarget) {
       setIsModalOpen(false);
     }
@@ -105,7 +104,10 @@ const OurTeam = () => {
           <div className="relative bg-white rounded-lg overflow-hidden w-full max-w-2xl">
             <button 
               className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
-              onClick={handleModalToggle}
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent event from bubbling up
+                setIsModalOpen(false);
+              }}
             >
               <FaTimes className="text-2xl" />
             </button>

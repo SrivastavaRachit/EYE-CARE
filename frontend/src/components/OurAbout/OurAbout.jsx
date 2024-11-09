@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineUser, AiOutlineMedicineBox, AiOutlineHeart, AiOutlineSolution, AiOutlineCheckCircle, AiOutlineArrowRight } from 'react-icons/ai';
 import image1 from '../../assets/firstimage.png'
 import image2 from '../../assets/secondimage.png'
+import { NavLink } from 'react-router-dom';
 
 
 const OurAbout = () => {
@@ -27,7 +28,7 @@ const OurAbout = () => {
             className="w-full h-[500px] object-cover rounded-lg"
           />
         </div>
-        
+
         {/* Text on the Right */}
         <div className="md:w-1/2 md:ml-12 text-center md:text-left mt-7 md:mt-0">
           <h2 className="text-5xl font-bold mb-6">About World Medical Central Hospital <span className='text-teal-400'> Doctor</span> </h2>
@@ -49,10 +50,12 @@ const OurAbout = () => {
               Our administrations and support staff have exceptional skills
             </li>
           </ul>
-          <button className="flex items-center bg-teal-500 hover:bg-teal-700 text-white font-bold text-2xl py-3 px-6 rounded-full shadow-lg transition duration-200 ease-in-out transform hover:scale-105 mt-6">
-            About More
-            <AiOutlineArrowRight className="ml-3 text-3xl" />
-          </button>
+          <NavLink to='/about'>
+            <button className="flex items-center bg-teal-500 hover:bg-teal-700 text-white font-bold text-2xl py-3 px-6 rounded-full shadow-lg transition duration-200 ease-in-out transform hover:scale-105 mt-6">
+              About More
+              <AiOutlineArrowRight className="ml-3 text-3xl" />
+            </button>
+          </NavLink>
         </div>
       </div>
 

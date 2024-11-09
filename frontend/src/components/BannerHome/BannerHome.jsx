@@ -43,7 +43,8 @@ const BannerHome = () => {
             </div>
             <a 
               href="mailto:hexagonsservices@gmail.com"
-              className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+              className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 
+              rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
             >
               Send Enquiry
             </a>
@@ -56,9 +57,10 @@ const BannerHome = () => {
               <p className="font-bold">Appointment Call</p>
               <p className="text-xl font-semibold">+91 8840775386</p>
             </div>
-            <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+            <a href='tel:+918840775386' className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
               Call Us Now
-            </button>
+            </a>
+            
           </div>
 
           {/* WhatsApp Section */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { NavLink } from 'react-router-dom';
 
 const PricingPage = () => {
   return (
@@ -16,7 +17,7 @@ const PricingPage = () => {
       </div>
 
       <div className="mt-12 grid gap-8 lg:grid-cols-3 max-w-6xl w-full">
-        
+
         {/* Basic Plan */}
         <div className="relative bg-white border border-teal-200 rounded-lg shadow-lg transform hover:scale-105 transition duration-500 ease-in-out p-8 flex flex-col">
           <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-teal-500 text-white flex items-center justify-center rounded-full text-xl font-semibold">
@@ -37,7 +38,9 @@ const PricingPage = () => {
           <div className="mt-auto flex justify-center">
             <button className="text-2xl w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 flex items-center justify-center space-x-2 max-w-xs">
               <i className="fas fa-arrow-right"></i>
-              <span>Choose Plan</span>
+              <NavLink to='/contact'>
+                <span>Choose Plan</span>
+              </NavLink>
             </button>
           </div>
         </div>
@@ -62,7 +65,9 @@ const PricingPage = () => {
           <div className="mt-auto flex justify-center">
             <button className="text-2xl w-full bg-white text-teal-600 font-semibold py-2 px-4 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:bg-teal-50 flex items-center justify-center space-x-2 max-w-xs">
               <i className="fas fa-arrow-right"></i>
-              <span>Choose Plan</span>
+              <NavLink to='/contact'>
+                <span>Choose Plan</span>
+              </NavLink>
             </button>
           </div>
         </div>
@@ -88,11 +93,13 @@ const PricingPage = () => {
           <div className="mt-auto flex justify-center">
             <button className="text-2xl w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 flex items-center justify-center space-x-2 max-w-xs">
               <i className="fas fa-arrow-right"></i>
-              <span>Choose Plan</span>
+              <NavLink to='/contact'>
+                <span>Choose Plan</span>
+              </NavLink>
             </button>
           </div>
         </div>
-     </div>
+      </div>
     </div>
   );
 };
