@@ -8,7 +8,7 @@ import Team3 from '../../assets/Team3.png';
 import Team4 from '../../assets/Team4.png';
 import Team5 from '../../assets/Team5.png';
 import Team6 from '../../assets/Team6.png';
-import BackgroundVideo from '../../assets/meetvideo.mp4'; // Add your video file here
+import BackgroundVideo from '../../assets/meetvideo1.mp4'; // Add your video file here
 
 const doctors = [
   { name: "Dr. Anshika", role: "Founder", img: Team1 },
@@ -92,7 +92,7 @@ const OurTeam = () => {
         </div>
 
         {/* Overlay to darken the video for readability */}
-        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+        <div className="absolute inset-0  z-0"></div>
       </div>
 
       {/* Video Modal */}
