@@ -17,9 +17,9 @@ const OurLaboratory = () => {
                 <h3 className="text-lg font-semibold relative">
                   {/* Circle Elements on Left and Right of the Heading */}
                   <span className="relative inline-flex items-center justify-center">
-                    <span className="relative z-10">Our Laboratory Place</span>
-                    <span className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#56cfe1] rounded-full"></span>
-                    <span className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#56cfe1] rounded-full"></span>
+                    <span className="relative px-6 z-10 font-medium text-xl">Our Laboratory Place</span>
+                    <span className="absolute left-[-3px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#56cfe1] rounded-full"></span>
+                    <span className="absolute right-[-3px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#56cfe1] rounded-full"></span>
                   </span>
                 </h3>
               </div>

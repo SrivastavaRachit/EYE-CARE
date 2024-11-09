@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMail, AiOutlinePhone, AiOutlineWhatsApp, AiOutlineCalendar } from 'react-icons/ai'; // AiOutlineCalendar as appointment icon
+import { AiOutlineMail, AiOutlinePhone, AiOutlineWhatsApp, AiOutlineCalendar } from 'react-icons/ai';
 import bannerImage from '../../assets/banner.png';
 
 const BannerHome = () => {
@@ -19,15 +19,15 @@ const BannerHome = () => {
             Medical <span className="text-7xl italic text-teal-300">Doctor</span>
           </h1>
           
-          <p className="text-2xl  font-semibold mb-9">
+          <p className="text-2xl font-semibold mb-9">
             Today, Barry’s is on the cusp of continued global expansion with over <br />
             100,000 members working out weekly in studios.
           </p>
           
           {/* Styled Appointment Button */}
-          <button className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
-            Make Appointment
-          </button>
+          <a href='/contact' className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 text-xl hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+            Book Your Slot
+          </a>
         </div>
       </div>
 
@@ -39,11 +39,14 @@ const BannerHome = () => {
             <AiOutlineMail size={60} className="text-green-700 hover:text-white" />
             <div className="text-center">
               <p className="font-bold">Email Us</p>
-              <p className="text-base md:text-lg">contact@yourdomain.com</p>
+              <p className="text-xl font-semibold">hexagonsservices@gmail.com</p>
             </div>
-            <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-              Appointment Now
-            </button>
+            <a 
+              href="mailto:hexagonsservices@gmail.com"
+              className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              Send Enquiry
+            </a>
           </div>
           
           {/* Phone Section */}
@@ -51,10 +54,10 @@ const BannerHome = () => {
             <AiOutlinePhone size={60} className="text-green-700 hover:text-white" />
             <div className="text-center">
               <p className="font-bold">Appointment Call</p>
-              <p className="text-base md:text-lg">24/7 - Quick and easy</p>
+              <p className="text-xl font-semibold">+91 8840775386</p>
             </div>
             <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-              Appointment Now
+              Call Us Now
             </button>
           </div>
 
@@ -63,11 +66,16 @@ const BannerHome = () => {
             <AiOutlineWhatsApp size={60} className="text-green-700 hover:text-white" />
             <div className="text-center">
               <p className="font-bold">WhatsApp Us</p>
-              <p className="text-base md:text-lg">+123 456 7890</p>
+              <p className="text-xl font-semibold">+91 8840775386</p>
             </div>
-            <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-              Appointment Now
-            </button>
+            <a 
+              href="https://wa.me/+918840775386" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              Chat On WhatsApp
+            </a>
           </div>
 
           {/* Appointment Section */}
@@ -75,11 +83,14 @@ const BannerHome = () => {
             <AiOutlineCalendar size={60} className="text-green-700 hover:text-white" />
             <div className="text-center">
               <p className="font-bold">Make an Appointment</p>
-              <p className="text-base md:text-lg">Schedule with ease</p>
+              <p className="text-xl font-semibold">Schedule with ease</p>
             </div>
-            <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
-              Appointment Now
-            </button>
+            <a 
+              href='/contact' 
+              className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+            >
+              Reserve Your Slot
+            </a>
           </div>
         </div>
       </section>

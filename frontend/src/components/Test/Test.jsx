@@ -14,7 +14,7 @@ import bannerTesti from '../../assets/bannerTesti.png';
 const testimonials = [
     {
         id: 1,
-        name: "Karon Merata",
+        name: "Karan Singh",
         position: "Founder",
         image: testimonial1,
         rating: 4,
@@ -22,7 +22,7 @@ const testimonials = [
     },
     {
         id: 2,
-        name: "Poron Ratena",
+        name: "Rahul Gupta",
         position: "Manager",
         image: testimonial2,
         rating: 5,
@@ -30,7 +30,7 @@ const testimonials = [
     },
     {
         id: 3,
-        name: "Ratena OOPP",
+        name: "Amit Singh",
         position: "Co-Founder",
         image: testimonial3,
         rating: 5,
@@ -38,7 +38,7 @@ const testimonials = [
     },
     {
         id: 4,
-        name: "Jordan Elle",
+        name: "Miraj Gupta",
         position: "Head of Marketing",
         image: testimonial4,
         rating: 5,
@@ -46,7 +46,7 @@ const testimonials = [
     },
     {
         id: 5,
-        name: "Olivia Greene",
+        name: "Shaily Singh",
         position: "Operations Lead",
         image: testimonial5,
         rating: 4,
@@ -54,7 +54,7 @@ const testimonials = [
     },
     {
         id: 6,
-        name: "Alex Morgan",
+        name: "Ahmad khan",
         position: "Product Manager",
         image: testimonial6,
         rating: 5,
@@ -62,7 +62,7 @@ const testimonials = [
     },
     {
         id: 7,
-        name: "Nina Roberts",
+        name: "Suhail Gupta",
         position: "Sales Executive",
         image: testimonial7,
         rating: 4,
@@ -70,7 +70,7 @@ const testimonials = [
     },
     {
         id: 8,
-        name: "Marcus Li",
+        name: "Gaurav Singh",
         position: "Chief Technology Officer",
         image: testimonial8,
         rating: 5,
@@ -78,7 +78,7 @@ const testimonials = [
     },
     {
         id: 9,
-        name: "Emma Taylor",
+        name: "Amar Singh",
         position: "Senior Developer",
         image: testimonial9,
         rating: 5,

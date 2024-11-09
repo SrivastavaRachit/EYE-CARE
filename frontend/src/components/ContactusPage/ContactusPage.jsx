@@ -23,7 +23,7 @@ const ContactusPage = () => {
           </p>
           <a
           href="#contact"
-           className="bg-gradient-to-r from-teal-600 to-teal-400 text-white font-semibold text-lg tracking-wider py-3 px-10 rounded-full border-2 border-white shadow-md transition-all transform hover:scale-105 hover:from-teal-400 hover:to-teal-600 hover:shadow-lg"
+           className="bg-gradient-to-r from-teal-600 to-teal-400 text-black font-semibold text-xl tracking-wider py-3 px-10 rounded-full border-2 border-white shadow-md transition-all transform hover:scale-105 hover:from-teal-400 hover:to-teal-600 hover:shadow-lg"
           style={{ letterSpacing: '0.05em' }}
            >
   Book Your Appointment
@@ -45,8 +45,8 @@ const ContactusPage = () => {
               </svg>
             </div>
             <h3 className="font-bold text-2xl mb-2 text-teal-700">Email Us</h3>
-            <p className="text-xl text-black mb-4">drsmith@healthcare.com</p>
-            <a href="mailto:drsmith@healthcare.com" className="text-teal-600 font-semibold hover:underline">
+            <p className="text-xl font-semibold text-black mb-4">hexagonsservices@gmail.com</p>
+            <a href="mailto:hexagonsservices@gmail.com" className="text-teal-600 text-xl font-semibold hover:underline">
               Appointment Now
             </a>
           </div>
@@ -59,8 +59,8 @@ const ContactusPage = () => {
               </svg>
             </div>
             <h3 className="font-bold text-2xl mb-2 text-teal-700">Appointment Call</h3>
-            <p className="text-xl text-black mb-4">24/7 – quick and easy</p>
-            <a href="tel:+1234567890" className="text-teal-600 font-semibold hover:underline">
+            <p className="text-xl text-black font-semibold mb-4">24/7 – quick and easy</p>
+            <a href="tel:+1234567890" className="text-teal-600 text-xl font-semibold hover:underline">
               Appointment Now
             </a>
           </div>
@@ -73,12 +73,12 @@ const ContactusPage = () => {
               </svg>
             </div>
             <h3 className="font-bold text-2xl mb-2 text-teal-700">Our Location</h3>
-            <p className="text-xl text-black mb-4">Kurigram 256,54 LKD</p>
+            <p className="text-xl text-black font-semibold mb-4">Gomtinagar, LKO</p>
             <a
-              href="https://maps.google.com/?q=Kurigram 256,54 LKD"
+              href="https://maps.google.com/?q=Gomtinagar, LKO"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-teal-600 font-semibold hover:underline"
+              className="text-teal-600 font-semibold text-xl hover:underline"
             >
               Find Us Here
             </a>
@@ -99,7 +99,7 @@ const ContactusPage = () => {
             Get In Questions <span className="text-teal-400 underline decoration-teal-500">Touch</span>.
           </h2>
           <p className="text-gray-300 text-xl leading-relaxed">
-            It is issued free of charge in medical offices or at home with time purchase of services in the amount of more than $40 per person. Icesa in an elevated ambience.
+            It is issued free of charge in medical offices or at home with time purchase of services in the amount of more than ₹40 per person. Icesa in an elevated ambience.
           </p>
           <ul className="text-gray-300 space-y-2">
             <li className="flex items-start space-x-2">
@@ -186,10 +186,6 @@ const ContactusPage = () => {
     Send Request
   </span>
 </button>
-
-
-
-
           </form>
         </div>
       </div>

@@ -1,6 +1,9 @@
 import React from 'react';
-import { FaClock, FaMicroscope, FaUserMd, FaHeartbeat, FaAmbulance, FaStethoscope } from 'react-icons/fa';
-import { FaCalendarPlus, FaClinicMedical, FaProcedures, FaHeadset, FaHandsHelping, FaUserNurse } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+import { 
+  FaClock, FaMicroscope, FaUserMd, FaHeartbeat, FaAmbulance, FaStethoscope, 
+  FaCalendarPlus, FaClinicMedical, FaProcedures, FaHeadset, FaHandsHelping, FaUserNurse 
+} from 'react-icons/fa';
 import service1 from '../../assets/service1.png';
 import service2 from '../../assets/service2.png';
 import service3 from '../../assets/service3.png';
@@ -15,6 +18,7 @@ const services = [
     title: 'Faster Efficiently',
     description: 'We give you handcrafted solutions with trust.',
     imageUrl: service1,
+    buttonText: 'Get Quick Consultation',
   },
   {
     icon: <FaMicroscope />,
@@ -22,6 +26,7 @@ const services = [
     title: 'Deep of Expertise',
     description: 'We provide solutions from industry experts.',
     imageUrl: service2,
+    buttonText: 'Book Expert Diagnosis',
   },
   {
     icon: <FaUserMd />,
@@ -29,6 +34,7 @@ const services = [
     title: 'Support Doctor',
     description: 'Our doctors are available to assist you.',
     imageUrl: service3,
+    buttonText: 'Consult a Doctor Now',
   },
   {
     icon: <FaHeartbeat />,
@@ -36,6 +42,7 @@ const services = [
     title: 'Doctor To Leading',
     description: 'Leading doctors provide exceptional care.',
     imageUrl: service4,
+    buttonText: 'Talk to Leading Doctors',
   },
   {
     icon: <FaAmbulance />,
@@ -43,6 +50,7 @@ const services = [
     title: 'Emergencies Plan',
     description: 'Emergency support available around the clock.',
     imageUrl: service5,
+    buttonText: 'Request Emergency Help',
   },
   {
     icon: <FaStethoscope />,
@@ -50,10 +58,13 @@ const services = [
     title: 'Highly of Health',
     description: 'Maintaining the highest health standards.',
     imageUrl: service6,
+    buttonText: 'Schedule a Health Check',
   },
 ];
 
 const OurBestService = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   return (
     <div className="p-8 bg-teal-50 text-center">
       <h2 className="text-3xl font-semibold relative inline-flex items-center">
@@ -77,10 +88,11 @@ const OurBestService = () => {
             <p className="text-black text-xl mb-4">{service.description}</p>
             <img src={service.imageUrl} alt={service.title} className="w-full rounded-lg mt-2" />
             <button
-              className="mt-6 py-3 px-6 flex items-center justify-center gap-2 text-white bg-gradient-to-r from-teal-500 to-teal-700 rounded-full shadow-lg hover:bg-gradient-to-l transition-all duration-300"
+              className="mt-6 py-3 px-6 flex items-center justify-center gap-2 text-black bg-gradient-to-r from-teal-500 to-teal-700 rounded-full shadow-lg hover:bg-gradient-to-l transition-all duration-300"
+              onClick={() => navigate('/contact')} // Navigate to the Contact Us page
             >
               {service.buttonIcon}
-              <span className="font-semibold">Appointment Now</span>
+              <span className="font-semibold ">{service.buttonText}</span>
             </button>
           </div>
         ))}

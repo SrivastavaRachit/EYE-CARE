@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+
 import {
   FaClock,
   FaMicroscope,
@@ -35,6 +37,8 @@ const services = [
     title: 'Faster Efficiently',
     description: 'We give you handcrafted solutions with trust.',
     imageUrl: service1,
+    buttonText: 'Get Faster Service',
+    advancedButtonText: 'Book Fast Service',
   },
   {
     icon: <FaMicroscope />,
@@ -42,6 +46,8 @@ const services = [
     title: 'Deep of Expertise',
     description: 'We provide solutions from industry experts.',
     imageUrl: service2,
+    buttonText: 'Explore Expertise',
+    advancedButtonText: 'Consult Our Experts',
   },
   {
     icon: <FaUserMd />,
@@ -49,6 +55,8 @@ const services = [
     title: 'Support Doctor',
     description: 'Our doctors are available to assist you.',
     imageUrl: service3,
+    buttonText: 'Contact Doctor',
+    advancedButtonText: 'Doctor Assistance',
   },
   {
     icon: <FaHeartbeat />,
@@ -56,6 +64,8 @@ const services = [
     title: 'Doctor To Leading',
     description: 'Leading doctors provide exceptional care.',
     imageUrl: service4,
+    buttonText: 'Learn More',
+    advancedButtonText: 'Get Premium Care',
   },
   {
     icon: <FaAmbulance />,
@@ -63,6 +73,8 @@ const services = [
     title: 'Emergencies Plan',
     description: 'Emergency support available around the clock.',
     imageUrl: service5,
+    buttonText: 'Get Emergency Help',
+    advancedButtonText: 'Emergency Response',
   },
   {
     icon: <FaStethoscope />,
@@ -70,6 +82,8 @@ const services = [
     title: 'Highly of Health',
     description: 'Maintaining the highest health standards.',
     imageUrl: service6,
+    buttonText: 'Ensure Health',
+    advancedButtonText: 'Health Assurance',
   },
   {
     icon: <FaBriefcaseMedical />,
@@ -77,6 +91,8 @@ const services = [
     title: 'Medical Consultation',
     description: 'Get personalized health advice and consultations.',
     imageUrl: service7,
+    buttonText: 'Book Consultation',
+    advancedButtonText: 'Consult with Us',
   },
   {
     icon: <FaHospital />,
@@ -84,6 +100,8 @@ const services = [
     title: '24/7 Hospital Access',
     description: 'Our facilities are open around the clock.',
     imageUrl: service8,
+    buttonText: 'Access Hospital',
+    advancedButtonText: '24/7 Hospital Access',
   },
   {
     icon: <FaSyringe />,
@@ -91,12 +109,19 @@ const services = [
     title: 'Vaccination Programs',
     description: 'Comprehensive immunization services available.',
     imageUrl: service9,
+    buttonText: 'Get Vaccinated',
+    advancedButtonText: 'Vaccinate Today',
   },
 ];
 
 const ServicePage = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
   const [selectedService, setSelectedService] = useState(services[0]); // Default to the first service
 
+  const handleServiceClick = (service) => {
+    setSelectedService(service);
+    navigate('/contact'); // Navigate to the Contact Us page
+  };
   return (
     <>
       {/* Banner Section */}
@@ -115,9 +140,10 @@ const ServicePage = () => {
           {/* Call to Action Section */}
           <div className="mb-6">
             <p className="text-3xl mb-4">Schedule your appointment today!</p>
-            <button className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+            <br />
+            <a href='/contact' className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
               Make Appointment
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -144,11 +170,11 @@ const ServicePage = () => {
               <p className="text-black text-xl mb-4">{service.description}</p>
               <img src={service.imageUrl} alt={service.title} className="w-full rounded-lg mt-2" />
               <button
-                className="mt-6 py-3 px-6 flex items-center justify-center gap-2 text-white bg-gradient-to-r from-teal-500 to-teal-700 rounded-full shadow-lg hover:bg-gradient-to-l transition-all duration-300"
-                onClick={() => setSelectedService(service)} // Change the selected service on click
+                className="mt-6 py-3 px-6 flex items-center justify-center gap-2 text-black bg-gradient-to-r from-teal-500 to-teal-700 rounded-full shadow-lg hover:bg-gradient-to-l transition-all duration-300"
+                onClick={() => handleServiceClick(service)} // Change the selected service and navigate to Contact Us page
               >
                 {service.buttonIcon}
-                <span className="font-semibold">Appointment Now</span>
+                <span className="font-semibold text-xl">{service.advancedButtonText}</span>
               </button>
             </div>
           ))}
