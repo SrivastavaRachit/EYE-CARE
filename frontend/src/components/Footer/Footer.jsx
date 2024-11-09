@@ -33,9 +33,11 @@ const Footer = () => {
             <div className="container mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Logo and Description */}
                 <div className="flex flex-col items-start">
-                    <h2 className="text-xl md:text-2xl font-bold">Medinosi</h2>
+                    <NavLink to='/'>
+                    <h2 className="text-xl md:text-2xl cursor-pointer font-bold">EYE CARE</h2>
+                    </NavLink>
                     <p className="text-xl md:text-base mt-2 max-w-xs">
-                        Medinosi is your trusted partner in health. We provide world-class services for all your medical needs.
+                        EYECARE is your trusted partner in health. We provide world-class services for all your medical needs.
                     </p>
                     <div className="flex space-x-4 mt-4">
                         <div className="bg-white  p-2 rounded-full">
@@ -119,7 +121,7 @@ const Footer = () => {
             <div className="flex justify-center">
                 <div className="bg-teal-400 w-full sm:w-3/5 md:w-1/5 text-center text-sm md:text-base text-gray-900 py-2 rounded-tl-full rounded-tr-full">
                     &copy; 2024 All Rights Reserved By <br />
-                     <a href='https://hexagondigitalservices.com/' className="text-black cursor-pointer font-semibold">Hexagon Digital Services</a>
+                    <a href='https://hexagondigitalservices.com/' target='blank' className="text-black hover:text-purple-600 cursor-pointer font-semibold">Hexagon Digital Services</a>
                 </div>
             </div>
         </footer>
