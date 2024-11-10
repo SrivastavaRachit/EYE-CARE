@@ -12,13 +12,13 @@ const ContactusPage = () => {
         style={{ backgroundImage: `url(${bannerContact})` }}
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-60"></div>
+        <div className="absolute inset-0 "></div>
 
-        <div className="relative z-10 text-center px-4 max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-black font-[Poppins]">
+        <div className="relative z-10 text-center px-5 max-w-2xl">
+          <h1 className="text-7xl  font-bold mb-4 text-black font-[Poppins]">
             Contact Doctors
           </h1>
-          <p className="text-xl md:text-2xl italic text-black font-semibold mb-8">
+          <p className="text-xl italic text-black font-semibold mb-8">
             Reach out to our dedicated healthcare team for personalized solutions. We're committed to guiding your health journey with expert advice and compassionate care.
           </p>
           <a
