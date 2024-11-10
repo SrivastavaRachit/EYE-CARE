@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bannerContact from '../../assets/bannerContact.png';
 import { FaPhoneAlt, FaRegEnvelope, FaRegCommentDots } from "react-icons/fa";
 
-
 const ContactusPage = () => {
+  const [formData, setFormData] = useState({
+    isNewPatient: '',
+    name: '',
+    date: '',
+    contact: '',
+    sex: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const message = `Hello, I'm ${formData.name}. I am a ${formData.isNewPatient === 'yes' ? 'new' : 'existing'} patient, and I would like to book an appointment on ${formData.date}. My contact is ${formData.contact} and gender is ${formData.sex}.`;
+    const whatsappLink = `https://wa.me/918840775386?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
+
   return (
     <div className="bg-gray-800 text-white font-sans">
-      {/* Banner Section */}
       <div
         className="relative bg-cover bg-center h-[75vh] flex items-center justify-center"
         style={{ backgroundImage: `url(${bannerContact})` }}
       >
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 "></div>
+        <div className="absolute inset-0"></div>
 
         <div className="relative z-10 text-center px-5 max-w-2xl">
-          <h1 className="text-7xl  font-bold mb-4 text-black font-[Poppins]">
+          <h1 className="text-7xl font-bold mb-4 text-black font-[Poppins]">
             Contact Doctors
           </h1>
           <p className="text-xl italic text-black font-semibold mb-8">
@@ -28,12 +46,9 @@ const ContactusPage = () => {
           >
             Book Your Appointment
           </a>
-
-
         </div>
       </div>
-
-      {/* Main Contact Section */}
+      
       <div id="contact" className="bg-white text-gray-800 py-14 px-6 md:px-24">
         <div className="flex flex-col md:flex-row items-center justify-around space-y-10 md:space-y-0">
 
@@ -87,12 +102,10 @@ const ContactusPage = () => {
       </div>
       <div className="bg-teal-900 text-white font-sans py-16">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 space-y-10 lg:space-y-0 lg:space-x-16">
-
-          {/* Left Section */}
           <div className="flex flex-col space-y-7 max-w-lg">
             <div className="flex items-center leading-tight space-x-3">
               <FaRegEnvelope className="text-teal-400 w-8 h-8" />
-              <p className="text-teal-400 text-2xl  font-semibold">Our Contact Now</p>
+              <p className="text-teal-400 text-2xl font-semibold">Our Contact Now</p>
               <FaRegCommentDots className="text-teal-400 w-8 h-8" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -127,19 +140,18 @@ const ContactusPage = () => {
               <span className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500 opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-100 rounded-full"></span>
               <span className="relative text-xl text-black font-bold z-10">Contact Us</span>
             </a>
-
-
-
           </div>
 
-          {/* Right Section - Form */}
           <div className="bg-teal-700 p-10 rounded-lg shadow-lg w-full lg:w-[28rem]">
             <h3 className="text-3xl italic font-bold mb-4 text-black">Appointments</h3>
             <p className="text-white font-bold text-2xl mb-6">Available 24/7 Support health</p>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <select
+                name="isNewPatient"
                 className="w-full p-3 rounded-md bg-teal-800 text-xl text-white placeholder-gray-400"
-                defaultValue=""
+                value={formData.isNewPatient}
+                onChange={handleInputChange}
+                required
               >
                 <option value="" disabled>New Patient*</option>
                 <option value="yes">Yes</option>
@@ -147,22 +159,37 @@ const ContactusPage = () => {
               </select>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name*"
                 className="w-full p-3 rounded-md bg-teal-800 text-white text-xl placeholder-gray-400"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
               />
               <input
                 type="date"
+                name="date"
                 placeholder="Patient Date*"
                 className="w-full p-3 text-xl rounded-md bg-teal-800 text-white placeholder-gray-400"
+                value={formData.date}
+                onChange={handleInputChange}
+                required
               />
               <input
                 type="text"
+                name="contact"
                 placeholder="Email or Phone*"
                 className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
+                value={formData.contact}
+                onChange={handleInputChange}
+                required
               />
               <select
+                name="sex"
                 className="w-full text-xl p-3 rounded-md bg-teal-800 text-white placeholder-gray-400"
-                defaultValue=""
+                value={formData.sex}
+                onChange={handleInputChange}
+                required
               >
                 <option value="" disabled>Sex*</option>
                 <option value="male">Male</option>
@@ -171,27 +198,16 @@ const ContactusPage = () => {
               </select>
               <button
                 type="submit"
-                className="relative overflow-hidden w-full text-xl bg-gradient-to-r from-teal-400 via-teal-500 to-teal-700 text-white font-semibold py-3 rounded-full shadow-lg transform scale-100 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl active:scale-95 active:shadow-md group"
+                className="relative overflow-hidden w-full text-xl bg-gradient-to-r from-teal-400 via-teal-500 to-teal-700 text-black py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
-                {/* <!-- Default Gradient --> */}
-                <span className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 opacity-80 animate-gradient-x transition-all duration-500 group-hover:opacity-0"></span>
-
-                {/* <!-- Hover Gradient --> */}
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 opacity-0 group-hover:opacity-80 transition-all duration-500"></span>
-
-                <span className="relative z-10 flex text-black font-bold items-center justify-center gap-2">
-                  <svg className="w-5 h-5 text-white animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 2L3 14h9v8l10-12h-9V2z" />
-                  </svg>
-                  Send Request
-                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 opacity-0 hover:opacity-80 transition-all duration-500"></span>
+                <span className="relative z-10 text-black font-bold">Send Request</span>
               </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-
   );
 };
 

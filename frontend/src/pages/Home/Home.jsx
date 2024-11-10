@@ -25,7 +25,6 @@ const Home = () => {
         <OurTeam/>
         <TestiHome/>
         <BlogNews/>
-
         <Footer/>
         </>
     )
