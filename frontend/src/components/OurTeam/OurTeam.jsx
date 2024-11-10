@@ -63,10 +63,10 @@ const OurTeam = () => {
                   <FaInstagram className="text-red-600 text-3xl" />
                 </div>
               </div>
-              <div className="mt-4 text-2xl font-medium text-gray-800">
+              <div className="mt-4 text-2xl font-semibold text-gray-800">
                 <h3>{doctor.name}</h3>
                 <hr className="w-1/2 mx-auto my-2 border-t-2 border-teal-500" />
-                <p className="text-gray-600 text-xl">{doctor.role}</p>
+                <p className="text-gray-800 font-semibold text-xl">{doctor.role}</p>
               </div>
             </div>
           </SwiperSlide>

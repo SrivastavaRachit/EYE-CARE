@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className="flex items-center space-x-2">
                     <NavLink to="/" className="flex items-center space-x-2">
                         <img
-                            src="https://img.freepik.com/free-photo/flat-lay-eye-care-accessories-pink-background-with-notebook-mock-up_23-2148320363.jpg?t=st=1729855745~exp=1729859345~hmac=0e33ec2bf1ae14ee5acf97155825ca6ddcafef12a39206896c4e9d010f8393ad&w=740"
+                            src="https://t3.ftcdn.net/jpg/04/12/73/98/240_F_412739871_8awJ2DcBtlJmy46EhRjnI023HMpsuRlt.jpg"
                             alt="Logo"
                             className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-yellow-500 shadow-md"
                         />
