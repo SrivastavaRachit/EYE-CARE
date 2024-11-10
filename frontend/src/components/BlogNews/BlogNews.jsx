@@ -61,7 +61,7 @@ const BlogNews = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [totalSlides]);
@@ -81,16 +81,16 @@ const BlogNews = () => {
           </h2>
           <FaHeartbeat className="text-teal-400 text-3xl mx-2" />
         </div>
-        <p className="text-center font-bold text-4xl text-black mb-8">
-          We are Medical Largest <span className="text-4xl font-bold text-teal-400">Blog</span>
+        <p className="text-center font-bold text-2xl sm:text-4xl text-black mb-8">
+          We are Medical Largest <span className="text-teal-400">Blog</span>
         </p>
 
         <div className="relative">
-          <div className="flex overflow-hidden space-x-4">
+          <div className="flex overflow-hidden space-x-4 flex-wrap justify-center">
             {currentItems.map((post, index) => (
               <div
                 key={index}
-                className="bg-white rounded-3xl shadow-lg overflow-hidden flex-shrink-0 w-full md:w-1/3"
+                className="bg-white rounded-3xl shadow-lg overflow-hidden flex-shrink-0 w-full sm:w-1/2 md:w-1/3 max-w-sm mb-6"
               >
                 <div className="w-full h-56 overflow-hidden rounded-t-3xl">
                   <img
@@ -100,15 +100,15 @@ const BlogNews = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-gray-600 text-xl mb-4 flex items-start">
+                  <div className="text-gray-600 text-lg mb-4 flex items-start flex-wrap">
                     <span>By {post.author}</span>
                     <span className="mx-2">•</span>
                     <span>{post.date}</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-gray-800">{post.title}</h3>
-                  <p className="text-gray-800 font-semibold text-lg mb-4">{post.description}</p>
+                  <p className="text-gray-800 font-semibold text-base mb-4">{post.description}</p>
                   <NavLink to='/blog'>
-                    <button className="text-blue-600 font-semibold  text-xl hover:underline">Read More</button>
+                    <button className="text-blue-600 font-semibold text-lg hover:underline">Read More</button>
                   </NavLink>
                 </div>
               </div>
