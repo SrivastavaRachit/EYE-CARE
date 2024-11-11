@@ -35,11 +35,15 @@ const OurTeam = () => {
   return (
     <div className="our-team-container text-center py-10 px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-center mb-8">
-        <FaFacebook className="text-blue-950 text-3xl mx-2" />
+      <a href="https://www.facebook.com/profile.php?id=61567156598660&mibextid=JRoKGi" target="_blank" rel="noopener noreferrer">
+          <FaFacebook className="text-blue-950 text-3xl mx-2" />
+        </a>
         <h2 className="text-3xl font-bold text-black">
           Meet Our Doctors <span className="text-teal-500">Team</span>
         </h2>
-        <FaInstagram className="text-red-600 text-3xl mx-2" />
+        <a href="https://www.instagram.com/hexagondigitalservices?igsh=MWp2NG1oNTlibWVnZA%3D%3D" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="text-red-600 text-3xl mx-2" />
+        </a>
       </div>
 
       <Swiper
@@ -59,8 +63,12 @@ const OurTeam = () => {
               <div className="relative w-40 h-40 mx-auto rounded-full overflow-hidden transition-transform duration-300 hover:scale-105">
                 <img src={doctor.img} alt={doctor.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 flex items-center justify-center gap-5 bg-teal-500 bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <FaFacebook className="text-blue-600 text-3xl" />
-                  <FaInstagram className="text-red-600 text-3xl" />
+                <a href="https://www.facebook.com/profile.php?id=61567156598660&mibextid=JRoKGi" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="text-blue-600 text-3xl" />
+                  </a>
+                  <a href="https://www.instagram.com/hexagondigitalservices?igsh=MWp2NG1oNTlibWVnZA%3D%3D" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram className="text-red-600 text-3xl" />
+                  </a>
                 </div>
               </div>
               <div className="mt-4 text-xl font-semibold text-gray-800">
