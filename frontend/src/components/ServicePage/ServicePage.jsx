@@ -124,29 +124,35 @@ const ServicePage = () => {
   };
   return (
     <>
-      {/* Banner Section */}
-      <div className="relative bg-cover bg-center flex items-center h-[75vh] overflow-hidden"
-           style={{
-             backgroundImage: `url(${bannerImage})`,
-             backgroundSize: 'cover',
-             backgroundPosition: 'center top',
-           }}>
-        <div className="absolute inset-0 "></div> {/* Gradient Overlay */}
-        <div className="container mx-auto px-4 text-black relative z-10">
-          <h1 className="text-8xl font-bold mb-4 text-shadow">{selectedService.title}</h1>
-          <h2 className="text-5xl italic mb-2 text-shadow">Your Health is Our Priority</h2>
-          <p className="text-3xl mb-4">{selectedService.description}</p>
-          
-          {/* Call to Action Section */}
-          <div className="mb-6">
-            <p className="text-3xl mb-4">Schedule your appointment today!</p>
-            <br />
-            <a href='/contact' className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
-              Make Appointment
-            </a>
-          </div>
-        </div>
-      </div>
+     {/* Banner Section */}
+<div
+  className="relative bg-cover bg-center flex items-center lg:h-[75vh] md:h-[50vh] sm:h-[40vh] overflow-hidden"
+  style={{
+    backgroundImage: `url(${bannerImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center top',
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-30"></div> {/* Gradient Overlay */}
+  <div className="container mx-auto px-4 text-black relative z-10 text-center md:text-left">
+    <h1 className="text-6xl md:text-5xl sm:text-4xl lg:text-8xl font-bold mb-4 text-shadow">{selectedService.title}</h1>
+    <h2 className="text-5xl lg:text-5xl md:text-3xl sm:text-2xl italic mb-2 text-shadow">Your Health is Our Priority</h2>
+    <p className="text-3xl  lg:text-4xl md:text-xl sm:text-lg mb-4">{selectedService.description}</p>
+    
+    {/* Call to Action Section */}
+    <div className="mb-6">
+      <p className="text-3xl lg:text-4xl  md:text-xl sm:text-lg mb-4">Schedule your appointment today!</p>
+      <br />
+      <a
+        href="/contact"
+        className="bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
+      >
+        Make Appointment
+      </a>
+    </div>
+  </div>
+</div>
+
 
       <div className="p-8 bg-teal-50 text-center">
         <h2 className="text-3xl font-semibold relative inline-flex items-center">

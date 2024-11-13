@@ -6,7 +6,7 @@ const PricingPage = () => {
   return (
     <div className="min-h-screen bg-teal-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl text-center">
-        <h1 className="text-4xl font-bold text-teal-800 animate-fade-in">
+        <h1 className="text-3xl font-bold lg:text-4xl text-teal-800 animate-fade-in">
           <i className="fas fa-heartbeat text-teal-600 mr-2"></i>
           Affordable Healthcare Plans
           <i className="fas fa-heartbeat text-teal-600 ml-2"></i>

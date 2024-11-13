@@ -76,7 +76,6 @@ const OurLaboratory = () => {
             className="w-full h-full object-cover rounded-lg"
           />
           <div className="absolute bottom-5 right-5 text-3xl sm:text-4xl text-[#56cfe1] cursor-pointer animate-pulse">
-            <i className="fas fa-play-circle"></i>
           </div>
         </div>
       </div>

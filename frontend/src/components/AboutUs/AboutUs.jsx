@@ -29,7 +29,7 @@ const Banner = () => (
 
 const MissionVisionApproach = () => (
   <div className="bg-gradient-to-b from-teal-50 to-teal-100 py-12 sm:py-16">
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto text-center px-4 sm:px-6">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-10">Our Mission, Vision, and Approach</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
@@ -60,7 +60,7 @@ const MissionVisionApproach = () => (
 
 const DoctorInfo = () => (
   <div className="bg-gradient-to-b from-blue-50 to-blue-100 py-12 sm:py-16">
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto text-center px-4 sm:px-6">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-10">Meet Our Doctors Team</h2>
       <p className="text-lg sm:text-2xl text-black font-medium mb-10">
         Our dedicated team of doctors are experts in their respective fields, committed to delivering personalized and top-notch care.
@@ -88,7 +88,7 @@ const DoctorInfo = () => (
 
 const ReasonsToChooseUs = () => (
   <div className="bg-gradient-to-b from-gray-50 to-gray-200 py-12 sm:py-16">
-    <div className="container mx-auto text-center">
+    <div className="container mx-auto text-center px-4 sm:px-6">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-10">Why Choose Us?</h2>
       <p className="text-lg sm:text-2xl text-black font-medium mb-10">
         Discover the key reasons why our healthcare services stand out in providing top-tier care.

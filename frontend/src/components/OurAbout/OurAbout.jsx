@@ -13,8 +13,8 @@ const OurAbout = () => {
         {/* Images on the Left */}
         <div className="relative grid grid-cols-1 gap-4 lg:grid-cols-2 lg:w-1/2">
           {/* Overlay Text Above Images */}
-          <div className="absolute -top-8 lg:-top-12 left-1/2 transform -translate-x-1/2 bg-teal-100 text-teal-700 px-4 lg:px-6 py-2 lg:py-3 rounded-full text-base lg:text-lg font-bold">
-            25+ Years Experience Working
+          <div className="absolute -top-8 lg:-top-13  px-1 left-1/2 transform -translate-x-1/2 bg-teal-100 text-teal-700  lg:px-6 py-4 lg:py-3 rounded-full text-md lg:text-lg font-bold">
+            25+ Years Experience
           </div>
 
           <img
@@ -40,20 +40,21 @@ const OurAbout = () => {
           </p>
 
           {/* List with Icons on the Left */}
-          <ul className="text-gray-600 text-lg sm:text-xl mb-4 space-y-2">
-            <li className="flex items-start justify-center lg:justify-start">
-              <AiOutlineCheckCircle className="text-teal-500 mr-2 w-6 h-6" />
-              <span>Fractures and dislocations</span>
-            </li>
-            <li className="flex items-start justify-center lg:justify-start">
-              <AiOutlineCheckCircle className="text-teal-500 mr-2 w-6 h-6" />
-              <span>Connecting with the world to improve health globally</span>
-            </li>
-            <li className="flex items-start justify-center lg:justify-start">
-              <AiOutlineCheckCircle className="text-teal-500 mr-2 w-6 h-6" />
-              <span>Our administrations and support staff have exceptional skills</span>
-            </li>
-          </ul>
+          <ul className="text-gray-600 text-xl sm:text-xl mb-4 space-y-2">
+  <li className="flex items-start justify-center sm:justify-start">
+    <AiOutlineCheckCircle className="text-teal-500 mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+    <span className="text-base sm:text-lg">Doctors are considered lifesavers who treat patients.</span>
+  </li>
+  <li className="flex items-start justify-center sm:justify-start">
+    <AiOutlineCheckCircle className="text-teal-500 mr-1 w-5 h-5 sm:w-6 sm:h-6" />
+    <span className="text-base sm:text-lg">Connecting with the world to improve health globally</span>
+  </li>
+  <li className="flex items-start justify-center sm:justify-start">
+    <AiOutlineCheckCircle className="text-teal-500 mr-2 w-5 h-5 sm:w-6 sm:h-6" />
+    <span className="text-base sm:text-lg">Doctors should be available at any time for emergencies.</span>
+  </li>
+</ul>
+
 
           {/* Centered Button */}
           <div className="text-center lg:text-left">

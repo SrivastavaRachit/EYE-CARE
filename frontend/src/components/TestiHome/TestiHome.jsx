@@ -85,8 +85,8 @@ const TestiHome = () => (
             <div className="mt-2 md:mt-4 h-1 w-16 md:w-20 mx-auto bg-gradient-to-r from-teal-400 to-blue-500 rounded"></div>
         </div>
         <div className="flex justify-center px-4 md:px-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-16 px-4 md:px-12 lg:px-24 max-w-screen-xl">
-                {testimonials.map((testimonial) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 px-6 md:px-12 lg:px-24 max-w-screen-xl">
+        {testimonials.map((testimonial) => (
                     <TestimonialCard key={testimonial.id} {...testimonial} />
                 ))}
             </div>

@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
-// Import images for the Recent Posts section
 import RP1 from '../../assets/RP1.png';
 import RP2 from '../../assets/RP2.png';
 
@@ -22,10 +21,10 @@ const Footer = () => {
     };
 
     return (
-        <footer className="relative bg-gray-900 text-white mt-8 py-8 px-6 md:px-16">
+        <footer className="relative bg-gray-900 text-white mt-8 py-12 px-6 md:px-16">
             {/* Newsletter Card */}
             <div className="absolute inset-x-0 -top-10 mx-auto w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 bg-white
-        text-gray-900 p-4 sm:p-6 rounded-t-lg rounded-b-3xl shadow-xl flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-between">
+                text-gray-900 p-4 sm:p-6 rounded-t-lg rounded-b-3xl shadow-xl flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 justify-between z-10">
                 <div className="flex items-center space-x-2 sm:space-x-3">
                     <FiMail className="text-teal-500 text-2xl sm:text-3xl" />
                     <h4 className="text-base sm:text-lg font-bold text-center sm:text-left">Subscribe To Our Newsletter</h4>
@@ -47,7 +46,6 @@ const Footer = () => {
                 </div>
             </div>
 
-
             {/* Toast Notification */}
             {showToast && (
                 <div className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-teal-600 text-white py-2 px-4 rounded-lg shadow-lg">
@@ -56,11 +54,11 @@ const Footer = () => {
             )}
 
             {/* Footer Content */}
-            <div className="container mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="container mx-auto mt-24 sm:mt-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Logo and Description */}
                 <div className="flex flex-col items-start">
                     <NavLink to='/'>
-                        <h2 className="text-xl md:text-2xl cursor-pointer font-bold">EYE CARE</h2>
+                        <h2 className="text-xl md:text-lg cursor-pointer font-bold">EYE CARE</h2>
                     </NavLink>
                     <p className="text-xl md:text-base mt-2 max-w-xs">
                         EYECARE is your trusted partner in health. We provide world-class services for all your medical needs.
