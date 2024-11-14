@@ -50,11 +50,14 @@ const Navbar = () => {
                         <li><NavLink to="/about" className="hover:text-yellow-500 transition duration-300">About Us</NavLink></li>
                         <li><NavLink to="/testimonial" className="hover:text-yellow-500 transition duration-300">Testimonial</NavLink></li>
                     </ul>
-                    <button className="ml-4 px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-full shadow-md transform transition duration-300 hover:scale-105">
-                        <NavLink to='/contact'>
+                    <div className="flex justify-center w-full lg:w-auto">
+                        <NavLink
+                            to="/contact"
+                            className="ml-4 px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-full shadow-md transform transition duration-300 hover:scale-105 text-center"
+                        >
                             Contact Us
                         </NavLink>
-                    </button>
+                    </div>
                 </div>
 
                 {/* Mobile Hamburger Menu */}
@@ -80,14 +83,15 @@ const Navbar = () => {
                     </ul>
 
                     {/* Stylish Contact Us Button in Mobile Menu */}
-                    <button
-                        onClick={() => setIsOpen(false)}
-                        className="mt-6 w-10/12 mx-auto px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-gray-900 font-semibold rounded-full shadow-md text-center transition duration-300 transform hover:scale-105"
-                    >
-                        <NavLink to='/contact'>
+                    <div className="flex justify-center w-full">
+                        <NavLink
+                            to="/contact"
+                            onClick={() => setIsOpen(false)}
+                            className="mt-6 w-10/12 px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-gray-900 font-semibold rounded-full shadow-md text-center transition duration-300 transform hover:scale-105"
+                        >
                             Contact Us
                         </NavLink>
-                    </button>
+                    </div>
                 </div>
             )}
         </nav>
